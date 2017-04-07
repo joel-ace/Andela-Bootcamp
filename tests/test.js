@@ -7,6 +7,10 @@ var fizzBuzz = require('../index.js').fizzBuzz;
 
 describe("Fizz Buzz tests ", function() {
 
+  it("Should return 'Only Numbers are allowed' when string is passed", function() {
+    expect(fizzBuzz("3")).toBe('Only Numbers are allowed');
+  });
+
   it("should return `Fizz` for number divisible by 3", function() {
     expect(fizzBuzz(3)).toBe('Fizz');
   });
