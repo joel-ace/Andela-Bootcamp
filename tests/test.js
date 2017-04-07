@@ -2,7 +2,7 @@
   'use strict';
 
   var jasmine = require('jasmine');
-  var fizzBuzz = require('../aritgeo.js').fizzBuzz;
+  var aritGeo = require('../aritgeo.js').aritGeo;
 
 
   describe("Determine the sequence of an array of numbers: ", function() {
