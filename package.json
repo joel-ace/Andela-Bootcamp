@@ -1,0 +1,22 @@
+{
+  "name": "aritgeo",
+  "version": "1.0.0",
+  "description": "Javascript function that takes an array as an arguement and checks if the array passed is arithmetic, geometric, neither arithmetic or geometric progression",
+  "main": "index.js",
+  "scripts": {
+    "test": "jasmine tests/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joel-ace/Andela-Bootcamp.git"
+  },
+  "author": "Joel Akwevagbe",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joel-ace/Andela-Bootcamp/issues"
+  },
+  "homepage": "https://github.com/joel-ace/Andela-Bootcamp#readme",
+  "devDependencies": {
+    "jasmine": "^2.5.3"
+  }
+}
