@@ -1,0 +1,17 @@
+{
+  "name": "fizzbuzz",
+  "version": "1.0.0",
+  "description": "JS function to to return Fizz if the argument passed is divisible by 3, Buzz if the argument passed is divisible by, FizzBuzz if the argument passed is divisble by 3 and 5, or the argument passed when when the arguement passed is not divisible by 3 or 5",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "jasmine tests/test.js"
+  },
+  "author": "Joel",
+  "license": "ISC",
+  "devDependencies": {
+    "jasmine": "^2.5.3"
+  }
+}
