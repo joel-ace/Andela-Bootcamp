@@ -1,0 +1,22 @@
+{
+  "name": "getprimes",
+  "version": "1.0.0",
+  "description": "Function that takes an integer value and prints generates prime numbers from 0 to n",
+  "main": "index.js",
+  "scripts": {
+    "test": "jasmine tests/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joel-ace/Andela-Bootcamp.git"
+  },
+  "author": "Joel Akwevagbe",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joel-ace/Andela-Bootcamp/issues"
+  },
+  "homepage": "https://github.com/joel-ace/Andela-Bootcamp#readme",
+  "devDependencies": {
+    "jasmine": "^2.5.3"
+  }
+}
