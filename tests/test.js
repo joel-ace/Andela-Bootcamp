@@ -74,5 +74,16 @@
       });
     });
 
+    describe("Case for all elements in array", function() {
+
+      it("should return 'All elements in Array should be numbers' for [1, 2, 'john', 4]", function() {
+        expect(aritGeo([1, 2, 'john', 4])).toEqual("All elements in Array should be numbers");
+      });
+
+      it("should return 'All elements in Array should be numbers' for ['1', 2, '3', 4]", function() {
+        expect(aritGeo(['1', 2, '3', 4])).toEqual("All elements in Array should be numbers");
+      });
+    });
+
   });
 })();
