@@ -62,5 +62,17 @@
       });
       
     });
+
+    describe("Case for Number of element in sequence", function() {
+
+      it("should return 'Array should contain at least 3 numbers' for [1, 2]", function() {
+        expect(aritGeo([1, 2])).toEqual("Array should contain at least 3 numbers");
+      });
+
+      it("should return 'Array should contain at least 3 numbers' for [1, 2]", function() {
+        expect(aritGeo([30])).toEqual("Array should contain at least 3 numbers");
+      });
+    });
+
   });
 })();
