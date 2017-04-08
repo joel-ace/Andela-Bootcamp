@@ -12,28 +12,29 @@ module.exports = {
 		var arithmetic = true;
 		var geometric = true;
 
-
-		for(var i = 0; i < numberArray.length; i++){
-			// Using the formula nthTerm = firstTerm + (n - 1)d
-			// since js is zero indexed, i = n-1.  
-			if(numberArray[i] != numberArray[0] + (i * commonDifference)){
-				arithmetic = false;
+		if(numberArray.length >= 3){
+			for(var i = 0; i < numberArray.length; i++){
+				// Using the formula nthTerm = firstTerm + (n - 1)d
+				// since js is zero indexed, i = n-1.  
+				if(numberArray[i] != numberArray[0] + (i * commonDifference)){
+					arithmetic = false;
+				}
+				// Using the formula of nth term of GP Xn = ar**(n - 1)
+				if(numberArray[i] != numberArray[0] * (Math.pow(commonRatio, i)) ){
+					geometric = false;
+				}
 			}
-			// Using the formula of nth term of GP Xn = ar**(n - 1)
-			if(numberArray[i] != numberArray[0] * (Math.pow(commonRatio, i)) ){
-				geometric = false;
-			}
-		}
 
-		if(arithmetic == true){
-			return 'Arithmetic';
-		}
-		else if(geometric == true){
-			return 'Geometric';
+			if(arithmetic == true){
+				return 'Arithmetic';
+			}
+			else if(geometric == true){
+				return 'Geometric';
+			} else {
+				return -1;
+			}
 		} else {
-			return -1;
+			return "Array should contain at least 3 numbers";
 		}
-
-
 	}	
 }
