@@ -16,7 +16,7 @@ var getPrimes = require('../getprimes.js').getPrimes;
 	  });
 
 	  describe("Case for Prime Numbers", function(){
-	  	it("should return '[]' for 8", function(){
+	  	it("should return '[2,3,5,7]' for 8", function(){
 	  		expect(getPrimes(8)).toEqual([2,3,5,7]);
 	  	})
 	  	it("should return '[2,3,5,7]' for 9", function(){
